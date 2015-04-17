@@ -13,5 +13,8 @@ class Problem extends CI_Controller {
         $this->load->model('Problem_model');
     }
 
+    public function index() {
+        $data['problems'] = $this->Problem_model->getProblem();
+    }
 
 } 
